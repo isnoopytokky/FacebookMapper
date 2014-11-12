@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map My Location</title>
+	<meta charset="UTF-8">
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBD09emHl3ccD39Xro0OaRUVk-yGSVqED4"></script>
+    <script type="text/javascript" src="//connect.facebook.net/en_US/all.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+	
+    <div id="outerContainer"> 
+        <div id="innerContainer">
+            <button  onclick='getLoggedInUserDetails()'> Click Here to Log In to Facebook</button>
+            <div id="status"> </div>
+        </div>
+        <div id="map-canvas"> </div>
+    </div>
+    
+
+</body>
+</html>

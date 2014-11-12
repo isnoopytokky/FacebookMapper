@@ -1,0 +1,33 @@
+#outerContainer {
+	width: 800px; 
+	height: 55px;
+	margin: 40px;
+}
+
+#innerContainer {
+	width: 800px; 
+	height: 55px;
+	font-family: sans-serif;
+}
+
+#map-canvas { 
+	padding: 10px;
+	height: 500px; 
+	width: 800px;  
+	border: 1px solid red;
+}
+
+#status{
+	height: 50px;	
+	float: left;
+	margin-left: 10px;
+	font-family: inherit;
+	font-size: medium;
+}
+
+button {
+	height: 50px;	
+	float: left;
+	font-family: inherit;
+	font-size: medium;
+}
