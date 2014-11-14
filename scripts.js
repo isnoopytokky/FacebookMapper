@@ -68,6 +68,7 @@ function getLoggedInUserDetails() {
                 "Hi " + response.name + " Facebook says you are from " + address
                 + "<br/>This is how your hometown looks on a map!";
                 mapMyLocation(address);
+                
             } else {
                 document.getElementById("status").innerHTML = 
                 "Hi " + response.name + " I cannot find  your location on Facebook :(";
@@ -76,7 +77,9 @@ function getLoggedInUserDetails() {
         });
       }
       else {
-        FB.login();
+        FB.login(function(response){
+            getLoggedInUserDetails();
+        });
       }
     });   
 }
